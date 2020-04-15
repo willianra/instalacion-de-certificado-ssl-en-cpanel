@@ -1,0 +1,8 @@
+pasos a seguir 
+PASO #1 INGRESAR A LA PAGINA
+https://www.sslforfree.com/#tutorials
+PASO #2 hacer la INSTALACION en el cpanel SSL/TLS
+PASO #3 crear un archivo con el nombre .htaccess 
+	RewriteEngine On
+	RewriteCond %{SERVER_PORT} 80
+	RewriteRule ^(.*)$ https://tupaginaweb.com/$1 [R=301,L]
